@@ -1,0 +1,547 @@
+/* MAIN CSS */
+
+
+/*  Basic styling 
+	============================================================= */
+
+
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Lato', sans-serif;
+   font-weight: 300;
+   font-size: 15px;
+   color: #2c2b2b;
+   font-weight: normal;
+}
+
+*:focus {
+    outline: none;
+   }
+
+body {
+   background: url("img/bg.jpg");
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   width: 100%;
+   height: 100%;
+   min-height: 560px;
+   background-color:#000;
+}
+
+a, a:active, a:focus {
+outline: none;
+}
+
+table {
+   border-spacing: 10px;
+   border: 2px solid #000;
+   margin: 10px auto;
+   margin-bottom: 40px;
+}
+
+th, td {
+   border: 1px solid #000;
+   padding: 2px 3px;
+   font-size: 13px;
+   font-weight: normal; 
+   text-align: center;
+}
+
+select {
+   border: 1px solid transparent;
+   width: 98%;
+   height: 22px;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   margin-top: 2px;
+   display: block;
+}
+
+select:-moz-focusring { 
+   color: transparent;
+   text-shadow: 0 0 0 #000;
+}
+
+.ratapar {
+   display: inline-block;
+   width: 20px;
+   margin-left: 10px;
+}
+
+.par {
+   padding-bottom: 6px;
+   margin-bottom: 7px;
+   border-bottom: 1px solid #1c1b1b;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+
+.row:after {
+    clear:both;
+}
+
+.individual-player-score {
+   border-top: 1px solid #1c1b1b;
+   height: 30px;
+   margin-top: 10px;
+}
+
+.score-buttons .sub,
+.score-buttons .add {
+   width: 30px;
+   height: 30px;
+   font-size: 18px;
+   display: inline-block;
+   box-shadow: 0 5px #999;
+}
+
+.individual-player-score span {
+   display: inline-block;
+   font-size: 20px;
+   margin: 0 20px;
+   font-weight: bold;
+}
+
+.score-buttons {
+   left: 160px;
+   position: relative;
+   top: -60px;
+   width: 200px;
+}
+
+tr:last-child td,
+tr:last-child td b{ 
+   font-size: 12px; 
+   font-weight: 600;
+}
+
+
+/*  Container styling
+	============================================================= */
+
+.main-container {
+   position: relative;
+   width: 310px;
+   min-height: 480px;
+   height: auto;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   left: 50%;
+   -ms-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+   transform: translateX(-50%);
+   background: #3fc153;
+   border-radius: 10px;
+   overflow: hidden;
+   border: 1px solid #1c1b1b;
+}
+
+
+/*  Welcome screen styling
+	============================================================= */
+
+.welcome-screen {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #3fc153;
+   border-radius: 10px;
+}
+
+.welcome-screen h1 {
+   font-size: 42px;
+   text-align: center;
+   font-weight: 600;
+   margin-top: 20px;
+}
+
+.welcome-screen .submit-new {
+   width:120px;
+   height: 40px;
+   margin: 70px auto;
+   display: block;
+   border-radius: 10px;
+   border: 0px solid transparent;
+   cursor: pointer;
+   box-shadow: 0 7px #999;
+}
+
+.welcome-screen .submit-new:active{
+   box-shadow: 0 3px #666;
+   -ms-transform: translateY(4px);
+   -moz-transform: translateY(4px);
+   -webkit-transform: translateY(4px);
+   transform: translateY(4px);
+   background: #ccc6c6;
+}
+
+.welcome-screen-transition {
+   opacity: 0;
+   pointer-events: none;
+   transition: all 0.5s ease-in-out 0s;
+}
+
+.welcome-screen img {
+   width: 60%;
+   height: auto;
+   position: relative;
+   left: 50%;
+   -ms-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+}
+
+/*  Rata screen styling
+	============================================================= */
+
+.game-container {
+   position: relative;
+   overflow: hidden;
+   background: #3fc153;
+   height: auto;
+   width: 300px;
+   margin-bottom: 50px;
+}
+
+.game {
+   position: relative;
+   padding-right: 3px;
+}
+
+.rata-individual {
+   display: block;
+   width: 310px;
+   float: left;
+   font-size: 17px;
+}
+
+.rata-info {
+   text-transform: uppercase;
+   color: #2c2b2b;
+   padding: 5px;
+}
+
+.rata-info h2 {
+   margin-top: 5px;
+   margin-bottom: 25px;
+   text-align: center;
+   font-size: 30px;
+   letter-spacing: 1px;
+}
+
+.rata-info h2:after {
+   background-color: #1c1b1b;
+   content: " ";
+   display: block;
+   height: 2px;
+   margin: 10px auto 0 auto;
+   width: 50px;
+}
+
+.rata-info-inner {
+   padding-top: 5px;
+   margin-left: 5px;
+}
+
+.rata-info h4 {
+   margin-top:5px;
+   margin-bottom: 5px;
+   font-size: 19px;
+   letter-spacing: 1px;
+   display: inline-block;
+}
+
+.rata-info input {
+   margin-bottom: 15px;
+   border:1px solid transparent;
+   width: 98%;
+}
+
+.rata-info button {
+   width:120px;
+   height: 40px;
+   margin: 20px auto;
+   display: block;
+   border-radius: 10px;
+   border: 0px solid transparent;
+   cursor: pointer;
+   box-shadow: 0 7px #999;
+}
+
+.rata-info button:active{
+   box-shadow: 0 3px #999;
+   -ms-transform: translateY(4px);
+   -moz-transform: translateY(4px);
+   -webkit-transform: translateY(4px);
+   transform: translateY(4px);
+   background: #ccc6c6;
+}
+
+.error-container {
+   height: 20px;
+   width: 100%;
+   text-align: center;
+}
+
+.error {
+   padding-bottom: 5px;
+}
+
+#a-left,
+#a-right {
+   background: #efe9e9;
+   border-radius: 10px;
+   box-shadow: 0 4px 0 2px #999;
+   display: inline-block;
+   height: 35px;
+   position: absolute;
+   width: 35px;
+}
+
+#a-left {
+   left: 5px;
+   bottom: 10px;
+}
+
+#a-left:before{
+   border-color: transparent #1d1c1c transparent transparent;
+   border-style: solid;
+   border-width: 10px;
+   content: "";
+   display: inline-block;
+   margin-top: 7px;
+   margin-left: 1px;
+   border-radius: 3px;
+}
+
+#a-right {
+   right: 5px;
+   bottom: 10px;
+}
+
+#a-right:before{
+   border-color: transparent transparent transparent #1d1c1c;
+   border-style: solid;
+   border-width: 10px;
+   content: "";
+   display: inline-block;
+   margin-left: 14px;
+   margin-top: 7px;
+   border-radius: 3px;
+}
+
+#a-right:active,
+#a-left:active{
+   background: #ccc6c6;
+   box-shadow: 0 3px #999;
+   -ms-transform: translateY(4px);
+   -moz-transform: translateY(4px);
+   -webkit-transform: translateY(4px);
+   transform: translateY(4px);
+}
+
+#tulokset {
+   display: inline-block;
+   width: 110px;
+   height: 35px;
+   background: #efe9e9;
+   border-radius: 10px;
+   text-align: center;
+   font-size: 15px;
+   line-height: 15px;
+   padding-top: 9px;
+   position: absolute;
+   left: 50%;
+   bottom: -1px;
+   z-index: 500;
+   color: #000;
+   cursor: pointer;
+   box-shadow: 0 7px #999;
+   margin-bottom: 13px;
+   -ms-transform: translate(-50%, 0px);
+   -moz-transform: translate(-50%, 0px);
+   -webkit-transform: translate(-50%, 0px);
+   transform: translate(-50%, 0px);
+}
+
+#tulokset:active{
+   background: #ccc6c6;
+   box-shadow: 0 3px #999;
+   -ms-transform: translate(-50%, 4px);
+   -moz-transform: translate(-50%, 4px);
+   -webkit-transform: translate(-50%, 4px);
+   transform: translate(-50%, 4px);
+}
+
+.rata-individual h3 {
+   font-size: 18px;
+   font-weight: 900;
+}
+
+footer {
+   position: absolute;
+   bottom: 5px;
+   width: 300px;
+}
+
+.close,
+.close-bottom {
+   font-family: "Arial", Serif;
+   position: absolute;
+   display: block;
+   right: 10px;
+   background: rgba(0, 0, 0, 0.3);
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.close {
+   top: 5px;
+}
+
+.close-bottom {
+   bottom: -30px;
+}
+
+.close:before,
+.close:after,
+.close-bottom:before,
+.close-bottom:after {
+   background-color: #fff;
+   content: " ";
+   height: 12px;
+   left: 9px;
+   position: absolute;
+   top: 4px;
+   width: 2px;
+}
+
+.close:before,
+.close-bottom:before {
+   transform: rotate(45deg);
+   -ms-transform:rotate(45deg);
+   -webkit-transform:rotate(45deg);
+}
+
+.close:after,
+.close-bottom:after {
+   transform: rotate(-45deg);
+   -ms-transform:rotate(-45deg);
+   -webkit-transform:rotate(-45deg);
+}
+
+/*  Total score styling (normal)
+	============================================================= */
+
+.score-container {
+   position: absolute;
+   height: auto;
+   width: 300px;
+   background: #3fc153;
+   right: -400px;
+   z-index: 200;
+}
+
+.show-score {
+   right: 0px;
+   position: relative;
+}
+
+.score-container h3 {
+   margin-top:5px;
+   margin-bottom: 15px;
+   font-size: 23px;
+   letter-spacing: 1px;
+   display: inline-block;
+   text-align: center;
+   display: block;
+}
+
+.score-container h3:after {
+   background-color: #1c1b1b;
+   content: " ";
+   display: block;
+   height: 2px;
+   margin: 10px auto 0 auto;
+   width: 50px;
+}
+
+.player-name {
+   font-weight: bold;
+}
+
+.individual-score {
+   border-bottom: 1px solid #1c1b1b;
+   padding-bottom: 10px;
+   margin-bottom: 10px;
+}
+
+
+/*  Game styling
+	============================================================= */
+.game-heading h3 {
+   margin-top:5px;
+   margin-bottom: 15px;
+   font-size: 23px;
+   letter-spacing: 1px;
+   display: inline-block;
+   text-align: center;
+   display: block;
+}
+
+.game-heading h3:after {
+   background-color: #1c1b1b;
+   content: " ";
+   display: block;
+   height: 2px;
+   margin: 10px auto 0 auto;
+   width: 50px;
+}
+
+
+/*  Total score styling (table)
+	============================================================= */
+
+.total-socre {
+   display: none;
+}
+
+.score-table {
+   text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

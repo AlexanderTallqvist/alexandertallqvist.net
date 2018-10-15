@@ -1,0 +1,16 @@
+/* FONTS */
+
+
+@charset "UTF-8";
+
+
+@font-face {
+  font-family: 'AvenirLTStd-Black';
+  src: url('fonts/AvenirLTStd-Black.eot');
+  src: url('fonts/AvenirLTStd-Black.woff') format('woff'),
+       url('fonts/AvenirLTStd-Black.ttf') format('truetype'),
+       url('fonts/AvenirLTStd-Black.otf') format("opentype"),
+       url('fonts/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -23,6 +23,7 @@ body {
 .wrapper {
     width: 320px;
     position: relative;
+    margin-bottom: 5px;
 }
 
 .wrapper * {
@@ -31,5 +32,5 @@ body {
 
 .wrapper span {
     position: absolute;
-    left: 90px;
+    right: 0;
 }

@@ -26,8 +26,13 @@ function updateClock() {
 
   var s = diff;
 
+  if (s < 10) {
+    s = "0" + s;
+  }
+
   document.getElementById("time-ago-days").innerText = d;
-  document.getElementById("time-ago-hours").innerHTML = m;
+  document.getElementById("time-ago-hours").innerHTML = h;
+  document.getElementById("time-ago-minutes").innerHTML = m;
   document.getElementById("time-ago-seconds").innerHTML = s;
 }
 

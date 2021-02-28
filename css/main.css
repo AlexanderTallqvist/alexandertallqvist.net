@@ -1,0 +1,127 @@
+/* COLORS */
+:root {
+  --text: #FFFFFF;
+  --accent: #81c784;
+}
+
+/* FONTS */
+@font-face {
+  font-family: MonsterratRegular;
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: MonsterratBold;
+  src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: MonsterratMedium;
+  src: url('../fonts/Montserrat/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: MonsterratLight;
+  src: url('../fonts/Montserrat/Montserrat-Light.ttf');
+}
+
+/* GENERAL STYLES */
+html {
+  box-sizing: border-box;
+  font-family: 'MonsterratRegular', serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* NAVIGATION STYLES */
+.navigation {
+  position: relative;
+  z-index: 10;
+  padding: 30px 40px 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation .logo {
+  color: var(--text);
+  font-family: 'MonsterratBold', serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.navigation .link-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  list-style: none;
+}
+
+.navigation .link-container li {
+  padding: 10px 20px;
+  color: var(--text);
+}
+
+.navigation .link-container a {
+  color: var(--text);
+  font-family: 'MonsterratBold', serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.navigation .link-container a:hover {
+  text-decoration: underline;
+}
+
+
+/* HEADER STYLES */
+.header {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.header:before {
+  content: "";
+  display: block;
+  background: #101a31 linear-gradient(147deg, #101a31, #101a31 25%, #15223c) no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.header .content {
+  font-family: 'MonsterratRegular', serif;
+  position: relative;
+  z-index: 10;
+  padding: 150px 50px;
+  color: var(--text);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header .content .text {
+  font-size: 50px;
+  letter-spacing: 2px;
+  width: 100%;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.header .content .typewriter {
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+.header .content .typewriter strong {
+  color: var(--accent);
+}

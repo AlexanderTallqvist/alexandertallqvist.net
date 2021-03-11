@@ -1,308 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Alexander Tallqvist Web Developer Portfolio">
-    <meta name="keywords" content="Alexander, Tallqvist, Portfolio, Alexander Tallqvist, Alexander Tallqvist Portfolio">
-    <meta name="author" content="Alexander Tallqvist">
-
-    <title>Alexander Tallqvist | Portfolio</title>
-
-    <link rel="shortcut icon" href="favicon.png" type="image/png"/>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Alexander Tallqvist Full-Stack Web Developer Portfolio">
+  <meta name="keywords" content="Alexander, Tallqvist, Full-Stack Web Developer, Portfolio, Alexander Tallqvist, Alexander Tallqvist Portfolio">
+  <meta name="author" content="Alexander Tallqvist">
+  <link rel="shortcut icon" href="favicons/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Alexander Tallqvist | Portfolio</title>
 </head>
+<body>
 
-<body id="page-top">
+  <header class="header">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Alexander TALLQVIST</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#personal">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav class="navigation">
+      <div class="logo">Tallqvist.dev</div>
+      <ul class="link-container">
+        <li class="link"><a target="_blank" href="https://www.linkedin.com/in/alexandertallqvist/">LinkedIn</a></li>
+        <li class="link"><a target="_blank" href="https://github.com/AlexanderTallqvist">GitHub</a></li>
+        <li class="link"><a target="_blank" href="files/alexander_tallqvist_cv.pdf">Resume</a></li>
+      </ul>
     </nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Alexander Tallqvist</h1>
-                <hr>
-                <p>Full Stack Web Developer</p>
-                <a href="#services" class="btn btn-primary btn-xl page-scroll">Keep Reading</a>
-            </div>
-        </div>
-    </header>
+    <div class="content">
+      <div class="text">Alexander Tallqvist</div>
+      <div class="typewriter" id="typewriter"></div>
+    </div>
+  </header>
 
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">What, Why and How?</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paint-brush wow bounceIn text-primary"></i>
-                        <h3>Front-End</h3>
-                        <p class="text-faded">I develop websites with the latest front-end technologies, and my code is always well-constructed and clean.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-code wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Back-End</h3>
-                        <p class="text-faded">I am familiar with both server side languages and RDBMS's, and I have hands-on experience with the CMS Drupal.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-gears wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Planning</h3>
-                        <p class="text-faded">My projects start out with a logical and well-thought-out plan, and I strive to always meet my deadlines on time.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Passion</h3>
-                        <p class="text-faded">Web development is my passion. My work is always created with love and care, and I accept no less than absolute perfection.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="min-content"></div>
 
-    <section style="display:none;" id="portfolio">
-        <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Recent Work</h2>
-            <hr class="primary">
-        </div>
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="container">
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xm-12 wow slideInUp" data-wow-delay=".4s">
-                        <h3 class="portfolio-header">SpaceX</h3>
-                        <a href="http://fenja.novia.fi/~AlexanderTallqvi/drupal/" target="_blank" class="portfolio-box">
-                            <img src="img/portfolio/1.jpg" class="img-responsive" alt="SpaceX">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Web Development
-                                    </div>
-                                    <div class="project-name">
-                                        SpaceX <br>
-                                        - Visit the Website -
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xm-12 wow slideInUp" data-wow-delay=".4s">
-                        <h3 class="portfolio-header">Hangethe Böcker</h3>
-                        <a href="http://www.hangethebocker.com/" target="_blank" class="portfolio-box">
-                            <img src="img/portfolio/2.jpg" class="img-responsive" alt="Hangethe Böcker">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Web Development
-                                    </div>
-                                    <div class="project-name">
-                                        Hangethe Böcker <br>
-                                        - Visit the Website -
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xm-12 wow slideInUp" data-wow-delay=".4s">
-                        <h3 class="portfolio-header">KK Eken</h3>
-                        <a href="http://kkekenn.esy.es/" target="_blank" class="portfolio-box">
-                            <img src="img/portfolio/3.png" class="img-responsive" alt="KK Eken">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Web Development
-                                    </div>
-                                    <div class="project-name">
-                                        KK Eken <br>
-                                        - Visit the Website -
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                     <div class="col-lg-4 col-md-4 col-sm-6 col-xm-12 wow slideInUp" data-wow-delay=".4s">
-                        <h3 class="portfolio-header">Omnifood Project</h3>
-                        <a href="http://alexandertallqvist.net/omni/" target="_blank" class="portfolio-box">
-                            <img src="img/portfolio/4.jpg" class="img-responsive" alt="Omnifood">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Web Development
-                                    </div>
-                                    <div class="project-name">
-                                        Omnifood <br>
-                                        - Visit the Website -
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                     <div class="col-lg-4 col-md-4 col-sm-6 col-xm-12 wow slideInUp" data-wow-delay=".4s">
-                        <h3 class="portfolio-header">Hyvän Olon Tuulahdus</h3>
-                        <a href="http://alexandertallqvist.net/tuulahdus/" target="_blank" class="portfolio-box">
-                            <img src="img/portfolio/5.png" class="img-responsive" alt="Omnifood">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Web Development
-                                    </div>
-                                    <div class="project-name">
-                                        Hyvän Olon Tuulahdus <br>
-                                        - Visit the Website -
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <footer class="footer"></footer>
 
-    <section style="display:none;" id="personal">
-        <div class="col-lg-12 text-center">
-            <h2 class="section-heading">About Me</h2>
-            <hr class="primary">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 personal-left-left">
-                    <img class="img-circle" src="img/alexander.jpg" alt="Alexander Tallqvist" width="200" height="200">
-                    <ul class="social-custom">
-                        <li>
-                            <a href="https://www.facebook.com/alexander.tallqvist" target="_blank"> <img class="img-circle" src="img/facebook.png" alt="Facebook Icon" width="35" height="35"/> </a>
-                        </li>
-
-                        <li>
-                            <a href="https://linkedin.com/in/alexander-tallqvist-64ba65106" target="_blank"> <img class="img-circle" src="img/linkedin.png" alt="LinkedIn Icon" width="35" height="35"/> </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 personal-left-right">
-                    <h2 class="text-custom">Hello!</h2>
-                    <p class="text-faded">My name is <strong>Alexander Tallqvist</strong>. I'm a passionate and enthusiastic web developer in my early 20s from Helsinki Finland. I'm currently studying for a Bachelor's degree in Business Administration, and my field of study is Information Technology.</p>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h3>Skills</h3>
-                    <div class="progress wow fadeInRight" data-wow-delay=".1s">
-                        <div class="progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-                            <span class="progress-bar-text">Web Development </span>
-                        </div>
-                    </div>
-                    <div class="progress wow fadeInRight" data-wow-delay=".1s">
-                        <div class="progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                            <span class="progress-bar-text">Planning</span>
-                        </div>
-                    </div>
-                    <div class="progress wow fadeInRight" data-wow-delay=".1s">
-                        <div class="progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                            <span class="progress-bar-text">Organization</span>
-                        </div>
-                    </div>
-                    <div class="progress wow fadeInRight" data-wow-delay=".1s">
-                        <div class="progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                            <span class="progress-bar-text">Communication</span>
-                        </div>
-                    </div>
-                    <div class="progress wow fadeInRight" data-wow-delay=".1s">
-                        <div class="progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                            <span class="progress-bar-text">Learning</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p >Please don't hesitate to contact me.</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn" data-wow-delay=".2s"></i>
-                    <p>+358-408403560</p>
-                </div>
-                <div class="col-lg-4 col-md-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".2s"></i>
-                    <p>alexander.tallqvist(at)novia.fi</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/creative.js"></script>
-
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-72870510-1', 'auto');
-    ga('send', 'pageview');
-    </script>
-
+  <script src="js/typewriter.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -35,14 +35,21 @@ html {
   box-sizing: inherit;
 }
 
+a, a:active, a:focus{
+  outline: none;
+}
+
 /* NAVIGATION STYLES */
 .navigation {
   position: relative;
   z-index: 10;
-  padding: 30px 40px 20px 40px;
+  padding: 30px 25px 20px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .navigation .logo {
@@ -101,10 +108,13 @@ html {
   font-family: 'MonsterratRegular', serif;
   position: relative;
   z-index: 10;
-  padding: 150px 50px;
+  padding: 150px 25px;
   color: var(--text);
   display: flex;
   flex-wrap: wrap;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header .content .text {

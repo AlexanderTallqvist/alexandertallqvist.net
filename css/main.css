@@ -50,6 +50,7 @@ a, a:active, a:focus{
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+  flex-wrap: nowrap;
 }
 
 .navigation .logo {
@@ -134,4 +135,37 @@ a, a:active, a:focus{
 
 .header .content .typewriter strong {
   color: var(--accent);
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 720px) {
+
+  .navigation {
+    flex-wrap: wrap;
+  }
+
+  .navigation .logo {
+    margin-bottom: 10px;
+  }
+
+  .navigation .link-container {
+    justify-content: flex-start;
+  }
+
+  .navigation .link-container li {
+    padding: 10px 25px 10px 0;
+  }
+
+  .header .content {
+    padding: 50px 25px;
+  }
+
+  .header .content .text {
+    font-size: 32px;
+    letter-spacing: normal;
+  }
+  .header .content .typewriter{
+    font-size: 26px;
+    letter-spacing: normal;
+  }
 }

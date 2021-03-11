@@ -8,6 +8,7 @@
     loop: true,
     delay: 75,
     deleteSpeed: 50,
+    cursor: '_'
   });
 
   typewriter

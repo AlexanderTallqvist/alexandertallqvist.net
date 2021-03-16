@@ -14,18 +14,17 @@
   typewriter
     .pauseFor(2500)
 
-    .typeString('Full-stack <strong>Web Developer</strong>.')
+    .typeString('Full-stack <strong>Web Developer</strong>')
     .pauseFor(1000)
-    .deleteChars(14)
+    .deleteChars(13)
 
-    .typeString('<strong>Drupal Developer</strong>.')
-    .pauseFor(1000)
-    .deleteChars(30)
-
-    .typeString('<strong>Mentor</strong> and  <strong>Teacher</strong>.')
+    .typeString('<strong>Drupal Developer</strong>')
     .pauseFor(1000)
     .deleteChars(30)
 
+    .typeString('<strong>Mentor</strong> and  <strong>Teacher</strong>')
+    .pauseFor(1000)
+    .deleteChars(30)
 
     .start();
 

@@ -290,6 +290,7 @@ a, a:active, a:focus{
 
   .header {
     height: auto;
+    min-height: 70vh;
   }
 
   .header .more {

@@ -342,6 +342,10 @@ a, a:active, a:focus{
 
 @media only screen and (max-width: 720px) {
 
+  .header {
+    min-height: 60vh;
+  }
+
   .navigation {
     flex-wrap: wrap;
   }
@@ -363,12 +367,12 @@ a, a:active, a:focus{
   }
 
   .header .content .text {
-    font-size: 28px;
+    font-size: 24px;
     letter-spacing: normal;
     margin-bottom: 5px;
   }
 
-  .header .content .typewriter{
+  .header .content .typewriter {
     font-size: 18px;
     letter-spacing: normal;
   }

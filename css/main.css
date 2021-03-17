@@ -5,6 +5,8 @@
   --dark_blue: #101727;
 }
 
+#particles-js{ position:absolute; width: 100%; height: 100%; }
+
 /* FONTS */
 @font-face {
   font-family: MonsterratRegular;

@@ -173,7 +173,7 @@ a, a:active, a:focus{
 }
 
 .main-content .content {
-  padding: 80px 25px;
+  padding: 60px 25px 80px 25px;
   color: var(--text);
   display: flex;
   flex-wrap: wrap;
@@ -232,11 +232,26 @@ a, a:active, a:focus{
 }
 
 .main-content h2 {
-  font-family: 'MonsterratBold', serif;
+  font-family: 'MonsterratMedium', serif;
   font-size: 22px;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 30px;
+  display: inline-block;
+  position: relative;
+}
+
+.main-content h2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%) rotate(270deg);
+  width: 20px;
+  height: 20px;
+  background: url('../images/chevron-down.svg') no-repeat;
+  background-size: cover;
 }
 
 .main-content p {

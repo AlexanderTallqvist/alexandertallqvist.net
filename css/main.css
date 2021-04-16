@@ -5,7 +5,11 @@
   --dark_blue: #101727;
 }
 
-#particles-js{ position:absolute; width: 100%; height: 100%; }
+#particles-js {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
 
 /* FONTS */
 @font-face {
@@ -144,6 +148,9 @@ a, a:active, a:focus{
   position: relative;
   color: var(--text);
   padding: 25px;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header .more p {
